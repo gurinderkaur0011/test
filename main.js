@@ -59,7 +59,7 @@ function speak(Emotion, Accuracy) {
 }
 console.log(ml5.version);
 var model = ml5.imageClassifier(
-  "/model.json",
+  "model.json",
   loaded
 );
 function loaded() {
