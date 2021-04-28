@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <title>Emotion identification</title>
+</head>
+<body>
+    <center>
+        <h1 class="btn-warning">
+            Emoji identification
+            <br>
+            <span>&#128512;</span> <span>&#128532;</span> <span>&#128546;</span> <span>&#128545;</span>
+        </h1>
+        <h2>I can predict your Feeling?</h2>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <p>Webcam - </p>
+                        <div id="webcam">
+
+                        </div>
+                        <br>
+                        <button onclick="capture()" class="btn btn-success">Capture</button>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p>Snapshot - </p>
+                        <div id="result">
+
+                        </div>
+                        <br>
+                        <button onclick="identify()" class="btn btn-success">Identify</button>
+                    </div>
+                    
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h2>Emotion : <span id="prediction"></span></h2>
+        <h2>Accuracy : <span id="accuracy"></span></h2>
+    </center>
+    <br>
+    <br>
+    <script src="main.js"></script>
+</body>
+</html>
